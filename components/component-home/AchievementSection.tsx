@@ -17,7 +17,7 @@ export default function AchievementSection() {
               </h2>
               <p className="font-medium text-medium text-secondary md:text-lg">Graduation from <a href="https://dumbways.id/" target="_blank" rel="noreferrer" className="text-blue-600">dumbways.id</a> batch 34</p>
               <div className="rounded-md shadow-md overflow-hidden max-w-xl mx-auto">
-                <img src="/assets/images/graduation-dumbways.png" alt="Roblox Youtubers Indonesia" className="w-full" />
+                <img src="/assets/images/graduation-dumbways.PNG" alt="Roblox Youtubers Indonesia" className="w-full" />
               </div>
 
 
