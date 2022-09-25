@@ -11,7 +11,7 @@ export default function HeroSection() {
               <h2 className="font-extrabold drop-shadow-lg md:drop-shadow-none md:font-medium text-secondary text-lg mt-1 mb-5 lg:text-xl">Web Developer & <span className="text-dark">Youtuber Gaming</span></h2>
               <p className="font-extrabold drop-shadow-lg md:drop-shadow-none md:font-medium text-slate-200 md:text-slate-400 mb-10 leading-relaxed">Coding, Eat, <span className="text-dark font-bold">Pray,</span> Learn, Sleep and Repeat.</p>
 
-              <a href="#" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-md hover:opacity-80 hover:shadow-teal-400 transition duration-300 ease-in-out">Contact Me</a>
+              <a href="#contact" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-md hover:opacity-80 hover:shadow-teal-400 transition duration-300 ease-in-out">Contact Me</a>
             </div>
 
             <div className="w-full self-end px-4 lg:w-1/2">
