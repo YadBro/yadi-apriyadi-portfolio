@@ -5,8 +5,8 @@ export default function FooterSection() {
     <>
     <footer className="bg-dark pt-24 pb-12">
       <div className="container">
-        <div className="flex flex-wrap mx-auto w-full lg:w-4/5 justify-between">
-          <div className="px-4 text-slate-300 font-medium leading-relaxed ">
+        <div className="flex flex-wrap mx-auto w-full lg:w-4/5 justify-between pb-10">
+          <div className="px-4 text-slate-300 font-medium leading-relaxed self-end">
             <h2 className="font-bold text-4xl text-white mb-5">Yadi Apriyadi</h2>
             <h3 className="font-bold text-2xl mb-2">Contact Me</h3>
             <p>yadiapriyadi676@gmail.com</p>
@@ -14,7 +14,7 @@ export default function FooterSection() {
             <p>Kel. Cibeureum, Kec. Cimahi Selatan</p>
           </div>
           <div className="pt-24 lg:px-8 px-4 self-end text-white">
-            <div className="flex justify-between">
+            <div className="flex justify-between mb-5">
               {/* These icon by icon8 https://icons8.com */}
               <YoutubeIcon />
               <InstagramIcon />
