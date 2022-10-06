@@ -25,7 +25,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <>
+    <div className='overflow-x-hidden'>
       <PageTitle titlePage="Home" />
 
       {/* Header Section Start */}
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
       <FooterSection />
       {/* Footer Section End */}
 
-    </>
+    </div>
   )
 }
 

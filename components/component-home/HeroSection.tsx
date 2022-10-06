@@ -15,8 +15,10 @@ export default function HeroSection() {
             </div>
 
             <div className="w-full self-end px-4 lg:w-1/2">
-              <div className="relative mt-10 lg:mt-0 lg:right-5">
+              <div className="relative mt-10 lg:mt-0 lg:right-6">
                 <img src="/assets/images/yadi.png" alt="Yadi Apriyadi" className="max-w-full mx-auto scale-125 lg:scale-100"/>
+
+                <img src="/assets/images/yb_fanart.png" alt="Yadi Apriyadi" className="max-w-full absolute mx-auto -top-48 -right-24 scale-90 -z-[1] lg:scale-75 lg:-top-64 lg:-right-36"/>
                 <span className="absolute -bottom-5 -z-10 left-1/2 -translate-x-1/2 lg:bottom-32 md:scale-100 scale-100 lg:scale-150">
                   <BlobBackground widthBlob={400} heightBlob={400} transformBlob="scale(1.4)"/>
                 </span>
