@@ -1,4 +1,4 @@
-import { BootstrapIcon, CSSIcon, ExpressIcon, GITIcon, GolangIcon, HerokuIcon, HTMLIcon, JavascriptIcon, JestIcon, MongoDBIcon, MySQLIcon, NextJsIcon, NodeJsIcon, PostgresqlIcon, ReactIcon, ReactNativeIcon, TypescriptIcon, VueIcon } from "../component-icon";
+import { BootstrapIcon, CSSIcon, ExpressIcon, GITIcon, GolangIcon, HerokuIcon, HTMLIcon, JavascriptIcon, JestIcon, MongoDBIcon, MySQLIcon, NextJsIcon, NodeJsIcon, PHPIcon, PostgresqlIcon, ReactIcon, ReactNativeIcon, ReduxIcon, TypescriptIcon, VueIcon, VuexIcon } from "../component-icon";
 
 export default function SkillsSection() {
   return(
@@ -15,6 +15,7 @@ export default function SkillsSection() {
                 <GolangIcon />
                 <JavascriptIcon />
                 <TypescriptIcon />
+                <PHPIcon />
               </div>
 
               <h2 className="skills-title">Frontend Development</h2>
@@ -24,6 +25,12 @@ export default function SkillsSection() {
                 <BootstrapIcon />
                 <CSSIcon />
                 <HTMLIcon />
+              </div>
+
+              <h2 className="skills-title">State Management Libraries</h2>
+              <div className="skills-position">
+                <ReduxIcon />
+                <VuexIcon />
               </div>
 
               <h2 className="skills-title">Backend Development</h2>

@@ -63,6 +63,14 @@ export function TypescriptIcon() {
   );
 }
 
+export function PHPIcon() {
+  return(
+    <>
+    <a href="https://www.php.net/" target="_blank" rel="noreferrer"> <img src="https://www.php.net/images/logos/php-logo.svg" alt="typescript" width="40" height="40"/> </a>
+    </>
+  );
+}
+
 
 // FRONTEND DEVELOPMENT ICONS
 export function VueIcon() {
@@ -192,6 +200,26 @@ export function GITIcon() {
     </>
   );
 }
+
+
+// STATE MANAGEMENT LIBRARIES
+export function ReduxIcon() {
+  return(
+    <>
+      <a href="https://redux.js.org/" target="_blank" rel="noreferrer"> <img src="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg" alt="git" width="40" height="40"/> </a>
+    </>
+  );
+}
+
+export function VuexIcon() {
+  return(
+    <>
+      <a href="https://vuex.vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://vuex.vuejs.org/logo.png" alt="git" width="40" height="40"/> </a>
+    </>
+  );
+}
+
+
 
 // PROGRAMMING LANGUAGE ICONS
 export function GolangIconGrayAnimation() {

@@ -5,7 +5,7 @@ export default function HeroSection() {
     <>
       <section id="home" className="pt-32">
         <div className="container">
-          <div className="flex flex-wrap relative">
+          <div className="flex flex-wrap relative lg:p-12">
             <div className="w-full self-center px-4 lg:w-1/2 absolute z-10 -bottom-10 md:bottom-0 md:static md:z-0">
               <h1 className="text-base font-extrabold drop-shadow-lg text-primary md:text-xl md:font-semibold md:drop-shadow-none">Hello Everyone 👋, I'am <span className="font-extrabold drop-shadow-lg block md:font-bold md:drop-shadow-none text-dark text-4xl mt-1 lg:text-5xl">Yadi Apriyadi</span></h1>
               <h2 className="font-extrabold drop-shadow-lg md:drop-shadow-none md:font-medium text-secondary text-lg mt-1 mb-5 lg:text-xl">Web Developer & <span className="text-dark">Youtuber Gaming</span></h2>
