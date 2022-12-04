@@ -66,7 +66,15 @@ export function TypescriptIcon() {
 export function PHPIcon() {
   return(
     <>
-    <a href="https://www.php.net/" target="_blank" rel="noreferrer"> <img src="https://www.php.net/images/logos/php-logo.svg" alt="typescript" width="40" height="40"/> </a>
+    <a href="https://www.php.net/" target="_blank" rel="noreferrer"> <img src="https://www.php.net/images/logos/php-logo.svg" alt="php icon" width="40" height="40"/> </a>
+    </>
+  );
+}
+
+export function LUAIcon() {
+  return(
+    <>
+    <a href="https://www.lua.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg" alt="lua icon" width="40" height="40"/> </a>
     </>
   );
 }
@@ -130,6 +138,16 @@ export function ExpressIcon() {
     </>
   );
 }
+
+// GAME DEVELOPMENT ICONS
+export function RobloxStudioIcon() {
+  return(
+    <>
+      <a href="https://create.roblox.com/docs" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png" alt="roblox studio icon" width="50" height="50"/> </a>
+    </>
+  );
+}
+
 
 // MOBILE APP DEVELOPMENT ICONS
 export function ReactNativeIcon() {
