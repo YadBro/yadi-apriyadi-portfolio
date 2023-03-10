@@ -19,7 +19,6 @@ export default function FooterSection() {
               <h3 className="font-bold text-2xl mb-2">Contact Me</h3>
               <p>yadi042003@gmail.com</p>
               <p>Indonesia, Cimahi City</p>
-              {/* <p>Kel. Cibeureum, Kec. Cimahi Selatan</p> */}
             </div>
             <div className="pt-24 lg:px-8 px-4 self-end text-white">
               <div className="flex justify-between mb-5">

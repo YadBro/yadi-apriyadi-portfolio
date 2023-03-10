@@ -20,12 +20,12 @@ export default function AboutSection() {
                 More and more to learn!
               </h2>
               <p className="font-medium text-base text-secondary max-w-xl lg:text-lg text-justify">
-                I am Yadi Apriyadi, a graduate student of Vocational High School
-                PUSDIKHUBAD CIMAHI in 2021. I am a hard worker with has
-                experience creating simple web application to complex web
-                applications. With this experience, I succeeded in creating
-                website-based applications such as e-commerce applications,
-                managing student data applications, etc.
+                I am Yadi Apriyadi, a Junior To Mid Fullstack Developer with
+                under 1 year experience. I am a hard worker with experience
+                building simple web applications to complex web applications.
+                With this experience I have succeeded in creating website-based
+                applications such as e-commerce applications, student data
+                management applications, etc.
               </p>
             </div>
 
