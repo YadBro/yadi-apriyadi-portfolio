@@ -1,16 +1,44 @@
-import { BootstrapIcon, CSSIcon, ExpressIcon, GITIcon, GolangIcon, HerokuIcon, HTMLIcon, JavascriptIcon, JestIcon, LUAIcon, MongoDBIcon, MySQLIcon, NextJsIcon, NodeJsIcon, PHPIcon, PostgresqlIcon, ReactIcon, ReactNativeIcon, ReduxIcon, RobloxStudioIcon, TypescriptIcon, VueIcon, VuexIcon } from "../component-icon";
+import {
+  BootstrapIcon,
+  CSSIcon,
+  ExpressIcon,
+  GITIcon,
+  GolangIcon,
+  HerokuIcon,
+  HTMLIcon,
+  JavascriptIcon,
+  JestIcon,
+  LaravelIcon,
+  LUAIcon,
+  MongoDBIcon,
+  MySQLIcon,
+  NextJsIcon,
+  NodeJsIcon,
+  PHPIcon,
+  PostgresqlIcon,
+  ReactIcon,
+  ReactNativeIcon,
+  ReduxIcon,
+  RobloxStudioIcon,
+  TypescriptIcon,
+  VueIcon,
+  VuexIcon,
+} from '../component-icon';
 
 export default function SkillsSection() {
-  return(
+  return (
     <>
       <section id="skills" className="pt-32 pb-32 bg-yellow-400">
         <div className="container">
           <div className="w-full px-4">
-
             <div className="mx-auto text-center mb-14">
-              <h4 className="font-semibold text-xl text-primary mb-2">Skills</h4>
-              
-              <h2 className="font-bold text-white text-3xl mb-4 mt-5 sm:text-4xl lg:text-5xl">Programming Languages</h2>
+              <h4 className="font-semibold text-xl text-primary mb-2">
+                Skills
+              </h4>
+
+              <h2 className="font-bold text-white text-3xl mb-4 mt-5 sm:text-4xl lg:text-5xl">
+                Programming Languages
+              </h2>
               <div className="skills-position">
                 <GolangIcon />
                 <JavascriptIcon />
@@ -32,6 +60,7 @@ export default function SkillsSection() {
               <div className="skills-position">
                 <NodeJsIcon />
                 <ExpressIcon />
+                <LaravelIcon />
               </div>
 
               <h2 className="skills-title">Game Development</h2>
@@ -76,9 +105,7 @@ export default function SkillsSection() {
               <div className="skills-position">
                 <GITIcon />
               </div>
-
             </div>
-
           </div>
         </div>
       </section>
