@@ -22,7 +22,6 @@ import {
   RobloxStudioIcon,
   TypescriptIcon,
   VueIcon,
-  VuexIcon,
 } from '../component-icon';
 
 export default function SkillsSection() {
@@ -71,7 +70,6 @@ export default function SkillsSection() {
               <h2 className="skills-title">State Management Libraries</h2>
               <div className="skills-position">
                 <ReduxIcon />
-                <VuexIcon />
               </div>
 
               <h2 className="skills-title">Mobile App Development</h2>

@@ -1070,22 +1070,6 @@ export function ReduxIcon() {
   );
 }
 
-export function VuexIcon() {
-  return (
-    <>
-      <a href="https://vuex.vuejs.org/" target="_blank" rel="noreferrer">
-        {' '}
-        <img
-          src="https://vuex.vuejs.org/logo.png"
-          alt="git"
-          width="40"
-          height="40"
-        />{' '}
-      </a>
-    </>
-  );
-}
-
 // PROGRAMMING LANGUAGE ICONS
 export function GolangIconGrayAnimation() {
   return (
