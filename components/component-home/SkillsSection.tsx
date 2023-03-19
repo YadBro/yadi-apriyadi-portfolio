@@ -59,6 +59,10 @@ export default function SkillsSection() {
               <div className="skills-position">
                 <NodeJsIcon />
                 <ExpressIcon />
+              </div>
+
+              <h2 className="skills-title">Fullstack Development</h2>
+              <div className="skills-position">
                 <LaravelIcon />
               </div>
 
