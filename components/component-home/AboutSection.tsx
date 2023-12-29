@@ -4,7 +4,7 @@ import {
   LinkedInIcon,
   GithubIcon,
   RobloxIcon,
-} from '../component-icon';
+} from "../component-icon";
 
 export default function AboutSection() {
   return (
@@ -20,9 +20,9 @@ export default function AboutSection() {
                 More and more to learn!
               </h2>
               <p className="font-medium text-base text-secondary max-w-xl lg:text-lg text-justify">
-                I am Yadi Apriyadi, a Junior To Mid Programmer with under 1 year
-                experience. I am a hard worker with experience building simple
-                web applications to complex web applications. With this
+                I am Yadi Apriyadi, a Junior To Mid Programmer with more than 1
+                year experience. I am a hard worker with experience building
+                simple web applications to complex web applications. With this
                 experience I have succeeded in creating website-based
                 applications such as e-commerce applications, student data
                 management applications, etc.
