@@ -55,6 +55,14 @@ However, the challenge looks different because something has to be added to comp
               <p className="font-medium text-base text-secondary text-justify">This is a Technical document page that I made without using any framework, and is also a challenge from Responsive Web Design FreeCodeCamp.</p>
             </div>
 
+            <div className="mb-12 p-4 md:w-1/2">
+              <div className="rounded-md shadow-md overflow-hidden">
+                <img src="/assets/images/portfolio/logo-jiep.png" alt="Logo Jiep" className="w-full" />
+              </div>
+              <h3 className="font-semibold text-xl text-dark mt-5 mb-3"><a href="https://recordcenter.jiep.co.id" target="_blank" rel="noreferrer" className="thickness-link">JIEP Record Center</a></h3>
+              <p className="font-medium text-base text-secondary text-justify">Helps create features (Pemusnahan, Otorisasi), debungging.</p>
+            </div>
+
           </div>
           <div className="flex justify-center thickness-link">
             <a href="https://www.linkedin.com/in/yadi-apriyadi/details/featured/" target="_blank" rel="noreferrer" className="text-blue-600">More...</a>
