@@ -60,7 +60,7 @@ However, the challenge looks different because something has to be added to comp
                 <img src="/assets/images/portfolio/logo-jiep.png" alt="Logo Jiep" className="w-full" />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3"><a href="https://recordcenter.jiep.co.id" target="_blank" rel="noreferrer" className="thickness-link">JIEP Record Center</a></h3>
-              <p className="font-medium text-base text-secondary text-justify">Helps create features (Pemusnahan, Otorisasi), debungging.</p>
+              <p className="font-medium text-base text-secondary text-justify">Helps create features (Pemusnahan, Otorisasi), debungging, etc.</p>
             </div>
 
           </div>

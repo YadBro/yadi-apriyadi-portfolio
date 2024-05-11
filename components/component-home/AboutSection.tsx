@@ -39,11 +39,8 @@ export default function AboutSection() {
               </p>
               <div className="flex items-center">
                 {/* These icon by icon8 https://icons8.com */}
-                <YoutubeIcon />
-                <InstagramIcon />
                 <LinkedInIcon />
                 <GithubIcon />
-                <RobloxIcon />
               </div>
             </div>
           </div>

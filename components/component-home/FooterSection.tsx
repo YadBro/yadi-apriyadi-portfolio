@@ -22,13 +22,10 @@ export default function FooterSection() {
               <p>Indonesia, Cimahi City</p>
             </div>
             <div className="pt-24 lg:px-8 px-4 self-end text-white">
-              <div className="flex justify-between mb-5">
+              <div className="flex justify-end mb-5">
                 {/* These icon by icon8 https://icons8.com */}
-                <YoutubeIcon />
-                <InstagramIcon />
                 <LinkedInIcon />
                 <GithubIcon />
-                <RobloxIcon />
               </div>
               <div className="text-left md:text-right">
                 Made With 💖 By{' '}
