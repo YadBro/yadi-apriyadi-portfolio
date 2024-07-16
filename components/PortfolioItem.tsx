@@ -1,4 +1,4 @@
-import { PropsWithChildren, useMemo } from "react"
+import { Fragment, PropsWithChildren, useMemo } from "react"
 import type { Icons } from "./component-icon"
 import { BootstrapIcon, CSSIcon, ExpressIcon, GithubIcon, GolangIcon, HTMLIcon, JavascriptIcon, LaravelIcon, LUAIcon, NextJsIcon, NuxtIcon, PostgresqlIcon, ReactIcon, ReactNativeIcon, RobloxStudioIcon, SocketIOIcon, VueIcon } from "./component-icon"
 
@@ -17,44 +17,50 @@ export interface PortfolioItemProps extends PropsWithChildren {
 export default function PortfolioItem(props: PortfolioItemProps) {
 
   const techStackItem = useMemo(() => {
+    function icon(techStack: Icons) {
+      switch (techStack) {
+        case 'react':
+          return <ReactIcon />
+        case 'javascript':
+          return <JavascriptIcon />
+        case 'postgresql':
+          return <PostgresqlIcon />
+        case 'html':
+          return <HTMLIcon />
+        case 'css':
+          return <CSSIcon />
+        case 'socketIO':
+          return <SocketIOIcon />
+        case 'express':
+          return <ExpressIcon />
+        case 'reactNative':
+          return <ReactNativeIcon />
+        case 'bootstrap':
+          return <BootstrapIcon />
+        case 'github':
+          return <GithubIcon />
+        case 'golang':
+          return <GolangIcon />
+        case 'laravel':
+          return <LaravelIcon />
+        case 'vue':
+          return <VueIcon />
+        case 'nuxt':
+          return <NuxtIcon />
+        case 'lua':
+          return <LUAIcon />
+        case 'robloxStudio':
+          return <RobloxStudioIcon />
+        case 'nextjs':
+          return <NextJsIcon />
+      }
+    }
+
     if (Array.isArray(props.techStacks) && props.techStacks.length) {
       return props.techStacks.map((techStack, i) => {
-        switch (techStack) {
-          case 'react':
-            return <ReactIcon />
-          case 'javascript':
-            return <JavascriptIcon />
-          case 'postgresql':
-            return <PostgresqlIcon />
-          case 'html':
-            return <HTMLIcon />
-          case 'css':
-            return <CSSIcon />
-          case 'socketIO':
-            return <SocketIOIcon />
-          case 'express':
-            return <ExpressIcon />
-          case 'reactNative':
-            return <ReactNativeIcon />
-          case 'bootstrap':
-            return <BootstrapIcon />
-          case 'github':
-            return <GithubIcon />
-          case 'golang':
-            return <GolangIcon />
-          case 'laravel':
-            return <LaravelIcon />
-          case 'vue':
-            return <VueIcon />
-          case 'nuxt':
-            return <NuxtIcon />
-          case 'lua':
-            return <LUAIcon />
-          case 'robloxStudio':
-            return <RobloxStudioIcon />
-          case 'nextjs':
-            return <NextJsIcon />
-        }
+        return <Fragment key={`techStack-${i}`}>
+          {icon(techStack)}
+        </Fragment>
       })
     } else {
       return null

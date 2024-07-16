@@ -71,7 +71,7 @@ export default function PortfolioSection() {
         link: "https://jiep.co.id/"
       },
       children: <>
-        This is main website from JIEP, we remake all each element of JIEP with fresh or modern website.
+        This is main website from JIEP, we rebuild each element of JIEP with fresh or modern website.
       </>,
       techStacks: ['javascript', 'vue', 'nuxt'],
     },
@@ -83,7 +83,7 @@ export default function PortfolioSection() {
         link: "https://ppid.jiep.co.id/"
       },
       children: <>
-        This is ppid website from JIEP, we remake all each element of PPID JIEP with fresh or modern website.
+        This is ppid website from JIEP, we rebuild each element of PPID JIEP with fresh or modern website.
       </>,
       techStacks: ['javascript', 'vue', 'nuxt'],
     },
@@ -98,6 +98,30 @@ export default function PortfolioSection() {
         Helps create features (Pemusnahan, Otorisasi), debungging, etc.
       </>,
       techStacks: ['javascript', 'vue'],
+    },
+    {
+      img: "/assets/images/portfolio/logo-jiep.png",
+      altImg: "Jiep Record Center Customer Capture",
+      project: {
+        title: "JIEP Record Center (Customer)",
+        link: "https://internal-rc.jiep.co.id"
+      },
+      children: <>
+        Helps create features (Pemusnahan, Otorisasi), debungging, etc.
+      </>,
+      techStacks: ['javascript', 'vue'],
+    },
+    {
+      img: "/assets/images/portfolio/pintar-edu.png",
+      altImg: "Siswa Pintar Edu Capture",
+      project: {
+        title: "Siswa Pintar Edu (LMS)",
+        link: "https://internal-rc.jiep.co.id"
+      },
+      children: <>
+        Rebuild website and add more features
+      </>,
+      techStacks: ['javascript', 'vue', 'nuxt'],
     },
     {
       img: "/assets/images/portfolio/CJS-Team.png",
