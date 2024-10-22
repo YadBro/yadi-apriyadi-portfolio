@@ -116,7 +116,7 @@ export default function PortfolioSection() {
       altImg: "Siswa Pintar Edu Capture",
       project: {
         title: "Siswa Pintar Edu (LMS)",
-        link: "https://internal-rc.jiep.co.id"
+        link: "https://siswa.pintaredu.id/"
       },
       children: <>
         Rebuild website and add more features
