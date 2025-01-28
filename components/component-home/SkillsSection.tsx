@@ -61,10 +61,10 @@ export default function SkillsSection() {
                 <ExpressIcon />
               </div>
 
-              <h2 className="skills-title">Fullstack Development</h2>
+              {/* <h2 className="skills-title">Fullstack Development</h2>
               <div className="skills-position">
                 <LaravelIcon />
-              </div>
+              </div> */}
 
               <h2 className="skills-title">Game Development</h2>
               <div className="skills-position">
