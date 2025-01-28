@@ -123,30 +123,30 @@ export default function PortfolioSection() {
       </>,
       techStacks: ['javascript', 'vue', 'nuxt'],
     },
-    {
-      img: "/assets/images/portfolio/CJS-Team.png",
-      altImg: "Creativity Jannah Studio Capture",
-      project: {
-        title: "Creativity Jannah Studio",
-        link: "https://creativity-jannah-studio.vercel.app/"
-      },
-      children: <>
-        This is my studio community with the aim of combining technology, art, and gaming to create something beautiful <strong>(jannah)</strong>.
-      </>,
-      techStacks: ['javascript', 'react', 'nextjs', 'lua', 'robloxStudio'],
-    },
-    {
-      img: "/assets/images/portfolio/beaconcream-escape-2.webp",
-      altImg: "Beaconcream Escape 2 Capture",
-      project: {
-        title: "Beaconcream Escape 2",
-        link: "https://www.roblox.com/id/games/8246593290/Beaconcream-Escape-2"
-      },
-      children: <>
-        Making websites every day is boring. I needed something new, so I tried other development, and ended up making a Roblox obby story game.
-      </>,
-      techStacks: ['lua', 'robloxStudio'],
-    },
+    // {
+    //   img: "/assets/images/portfolio/CJS-Team.png",
+    //   altImg: "Creativity Jannah Studio Capture",
+    //   project: {
+    //     title: "Creativity Jannah Studio",
+    //     link: "https://creativity-jannah-studio.vercel.app/"
+    //   },
+    //   children: <>
+    //     This is my studio community with the aim of combining technology, art, and gaming to create something beautiful <strong>(jannah)</strong>.
+    //   </>,
+    //   techStacks: ['javascript', 'react', 'nextjs', 'lua', 'robloxStudio'],
+    // },
+    // {
+    //   img: "/assets/images/portfolio/beaconcream-escape-2.webp",
+    //   altImg: "Beaconcream Escape 2 Capture",
+    //   project: {
+    //     title: "Beaconcream Escape 2",
+    //     link: "https://www.roblox.com/id/games/8246593290/Beaconcream-Escape-2"
+    //   },
+    //   children: <>
+    //     Making websites every day is boring. I needed something new, so I tried other development, and ended up making a Roblox obby story game.
+    //   </>,
+    //   techStacks: ['lua', 'robloxStudio'],
+    // },
   ]
 
   return (
