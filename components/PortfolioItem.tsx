@@ -1,6 +1,6 @@
 import { Fragment, PropsWithChildren, useMemo } from "react"
 import type { Icons } from "./component-icon"
-import { BootstrapIcon, CSSIcon, ExpressIcon, GithubIcon, GolangIcon, HTMLIcon, JavascriptIcon, LaravelIcon, LUAIcon, NextJsIcon, NuxtIcon, PostgresqlIcon, ReactIcon, ReactNativeIcon, RobloxStudioIcon, SocketIOIcon, VueIcon } from "./component-icon"
+import { AxiosIcon, BootstrapIcon, CSSIcon, ExpressIcon, FormikIcon, GithubIcon, GolangIcon, HTMLIcon, JavascriptIcon, LaravelIcon, LUAIcon, MaterialTailwindCSSIcon, NanostoresIcon, NextJsIcon, NodeJsIcon, NuxtIcon, PiniaIcon, PostgresqlIcon, ReactIcon, ReactNativeIcon, ReduxIcon, RobloxStudioIcon, SocketIOIcon, TailwindCSSIcon, TansactackQueryIcon, VueIcon, VuelidateIcon, VuexIcon } from "./component-icon"
 
 
 
@@ -12,6 +12,7 @@ export interface PortfolioItemProps extends PropsWithChildren {
     link: string,
   },
   techStacks?: Array<Icons>
+  cardImgClassName?: string
 }
 
 export default function PortfolioItem(props: PortfolioItemProps) {
@@ -53,6 +54,30 @@ export default function PortfolioItem(props: PortfolioItemProps) {
           return <RobloxStudioIcon />
         case 'nextjs':
           return <NextJsIcon />
+        case 'formik':
+          return <FormikIcon />
+        case 'tailwindcss':
+          return <TailwindCSSIcon />
+        case 'material-tailwindcss':
+          return <MaterialTailwindCSSIcon />
+        case 'nanostores':
+          return <NanostoresIcon />
+        case 'nodejs':
+          return <NodeJsIcon />
+        case 'vuelidate':
+          return <VuelidateIcon />
+        case 'bootstrap':
+          return <BootstrapIcon />
+        case 'redux':
+          return <ReduxIcon />
+        case 'pinia':
+          return <PiniaIcon />
+        case 'vuex':
+          return <VuexIcon />
+        case 'tanstack-query':
+          return <TansactackQueryIcon />
+        case 'axios':
+          return <AxiosIcon />
       }
     }
 
@@ -69,11 +94,11 @@ export default function PortfolioItem(props: PortfolioItemProps) {
 
   return (
     <div className="mb-12 p-4 md:w-1/2">
-      <div className="rounded-md shadow-md overflow-hidden">
+      <div className={`rounded-md shadow-md overflow-hidden ${props?.cardImgClassName || ''}`}>
         <img src={props.img} alt={props.altImg} className="w-full" />
       </div>
       <h3 className="font-semibold text-xl text-dark mt-5 mb-3"><a href={props.project.link} target="_blank" rel="noreferrer" className="thickness-link">{props.project.title}</a></h3>
-      <p className="font-medium text-base text-secondary text-justify">{props.children}</p>
+      <div className="font-medium text-base text-secondary text-justify">{props.children}</div>
       {
         Array.isArray(props.techStacks) && props.techStacks.length
           ?

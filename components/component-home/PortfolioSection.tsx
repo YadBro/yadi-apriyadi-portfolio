@@ -12,7 +12,7 @@ export default function PortfolioSection() {
       children: <>
         This is my task result from <a href="https://dumbways.id/" target="_blank" rel="noreferrer" className="text-blue-600">Dumbways Id</a>. - E-Commerce Web App
       </>,
-      techStacks: ['javascript', 'react', 'express', 'socketIO'],
+      techStacks: ['javascript', 'react', 'express', 'socketIO', 'nodejs', 'axios'],
     },
     {
       img: "/assets/images/portfolio/npm.png",
@@ -24,7 +24,7 @@ export default function PortfolioSection() {
       children: <>
         My First Package Manager Project, this is a package module for querying the postgresql database in Framework EXPRESSjs such a eloquent orm in Laravel.
       </>,
-      techStacks: ['javascript', 'postgresql'],
+      techStacks: ['javascript', 'postgresql', 'nodejs'],
     },
     {
       img: "/assets/images/portfolio/jewel.jpg",
@@ -49,7 +49,7 @@ export default function PortfolioSection() {
       children: <>
         This is my task result from <a href="https://dumbways.id/" target="_blank" rel="noreferrer" className="text-blue-600">Dumbways Id</a>. - Mobile App
       </>,
-      techStacks: ['javascript', 'reactNative'],
+      techStacks: ['javascript', 'reactNative', 'axios'],
     },
     {
       img: "/assets/images/portfolio/css-layout.png",
@@ -71,9 +71,9 @@ export default function PortfolioSection() {
         link: "https://jiep.co.id/"
       },
       children: <>
-        This is main website from JIEP, we rebuild each element of JIEP with fresh or modern website.
+        (Vue 3, Nuxt 3) This is main website from JIEP, we rebuild each element of JIEP with fresh or modern website.
       </>,
-      techStacks: ['javascript', 'vue', 'nuxt'],
+      techStacks: ['javascript', 'vue', 'nuxt', 'bootstrap', 'pinia', 'tanstack-query'],
     },
     {
       img: "/assets/images/portfolio/logo-jiep.png",
@@ -83,9 +83,9 @@ export default function PortfolioSection() {
         link: "https://ppid.jiep.co.id/"
       },
       children: <>
-        This is ppid website from JIEP, we rebuild each element of PPID JIEP with fresh or modern website.
+        (Vue 3, Nuxt 3) This is ppid website from JIEP, we rebuild each element of PPID JIEP with fresh or modern website.
       </>,
-      techStacks: ['javascript', 'vue', 'nuxt'],
+      techStacks: ['javascript', 'vue', 'nuxt', 'bootstrap', 'pinia', 'tanstack-query'],
     },
     {
       img: "/assets/images/portfolio/logo-jiep.png",
@@ -95,9 +95,9 @@ export default function PortfolioSection() {
         link: "https://recordcenter.jiep.co.id"
       },
       children: <>
-        Helps create features (Pemusnahan, Otorisasi), debungging, etc.
+        (Vue 2) Helps create features (Pemusnahan, Otorisasi), debungging, etc.
       </>,
-      techStacks: ['javascript', 'vue'],
+      techStacks: ['javascript', 'vue', 'vuelidate', 'bootstrap', 'axios'],
     },
     {
       img: "/assets/images/portfolio/logo-jiep.png",
@@ -107,9 +107,21 @@ export default function PortfolioSection() {
         link: "https://internal-rc.jiep.co.id"
       },
       children: <>
-        Helps create features (Pemusnahan, Otorisasi), debungging, etc.
+        (Vue 2) Helps create features (Pemusnahan, Otorisasi), debungging, etc.
       </>,
-      techStacks: ['javascript', 'vue'],
+      techStacks: ['javascript', 'vue', 'vuelidate', 'bootstrap', 'axios'],
+    },
+    {
+      img: "/assets/images/portfolio/pintar-edu.png",
+      altImg: "LMS Pintar Edu Capture",
+      project: {
+        title: "LMS Pintar Edu (LMS)",
+        link: "https://lms.pintaredu.id/"
+      },
+      children: <>
+        Maintanance (Add feature, bug fixing, improvement). This is V1
+      </>,
+      techStacks: ['javascript', 'react', 'redux', 'bootstrap', 'axios'],
     },
     {
       img: "/assets/images/portfolio/pintar-edu.png",
@@ -119,9 +131,27 @@ export default function PortfolioSection() {
         link: "https://siswa.pintaredu.id/"
       },
       children: <>
-        Rebuild website and add more features
+        (Vue 3, Nuxt 3)Rebuild website to V2 and add more features
       </>,
-      techStacks: ['javascript', 'vue', 'nuxt'],
+      techStacks: ['javascript', 'vue', 'nuxt', 'vuelidate', 'bootstrap', 'tanstack-query'],
+    },
+    {
+      img: "/assets/images/portfolio/jrku-ifg-logo.svg",
+      altImg: "JRku Partner Logo",
+      cardImgClassName: '!bg-dark',
+      project: {
+        title: "JRku Partner",
+        link: "https://jrku-app.jasaraharja.co.id/partner"
+      },
+      children: <>
+        Help development cms project:
+        <ul>
+          <li>- Create New Feature</li>
+          <li>- Bug Fixing</li>
+          <li>- Improvement</li>
+        </ul>
+      </>,
+      techStacks: ['javascript', 'react', 'nextjs', 'formik', 'tailwindcss', 'material-tailwindcss', 'nanostores', 'axios'],
     },
     // {
     //   img: "/assets/images/portfolio/CJS-Team.png",
@@ -171,6 +201,7 @@ export default function PortfolioSection() {
                   project={p.project}
                   altImg={p.altImg}
                   techStacks={p.techStacks}
+                  cardImgClassName={p?.cardImgClassName}
                 >
                   {p.children}
                 </PortfolioItem>

@@ -1,4 +1,32 @@
-export type Icons = 'nuxt' | 'socketIO' | 'redux' | 'github' | 'nextjs' | 'jest' | 'heroku' | 'mongoDB' | 'mysql' | 'robloxStudio' | 'reactNative' | 'nodejs' | 'express' | 'laravel' | 'css' | 'html' | 'bootstrap' | 'vue' | 'lua' | 'php' | 'typescript' | 'golang' | 'roblox' | 'github' | 'linkedIn' | 'youtube' | 'instagram' | 'react' | 'javascript' | 'postgresql'
+export type Icons = 'nuxt' | 'socketIO' | 'redux' | 'github' | 'nextjs' | 'jest' | 'heroku' | 'mongoDB' | 'mysql' | 'robloxStudio' | 'reactNative' | 'nodejs' | 'express' | 'laravel' | 'css' | 'html' | 'bootstrap' | 'vue' | 'lua' | 'php' | 'typescript' | 'golang' | 'roblox' | 'github' | 'linkedIn' | 'youtube' | 'instagram' | 'react' | 'javascript' | 'postgresql' | 'formik' | 'tailwindcss' | 'material-tailwindcss' | 'nanostores' | 'vuelidate' | 'bootstrap' | 'pinia' | 'vuex' | 'axios' |'tanstack-query'
+
+export function AxiosIcon() {
+  return (
+    <a href="https://axios-http.com/docs/intro" target="_blank" rel="noreferrer">
+      {' '}
+      <img
+        src="/assets/icons/axios.svg"
+        alt="Axios logo"
+        width="100"
+        height="100"
+      />{' '}
+    </a>
+  );
+}
+
+export function TansactackQueryIcon() {
+  return (
+    <a href="https://tanstack.com/query" target="_blank" rel="noreferrer">
+      {' '}
+      <img
+        src="/assets/icons/tanstack-query.png"
+        alt="TansactackQuery logo"
+        width="40"
+        height="40"
+      />{' '}
+    </a>
+  );
+}
 
 export function SocketIOIcon() {
   return (
@@ -7,6 +35,76 @@ export function SocketIOIcon() {
       <img
         src="https://socket.io/images/logo.svg"
         alt="Socket IO logo"
+        width="40"
+        height="40"
+      />{' '}
+    </a>
+  );
+}
+
+export function FormikIcon() {
+  return (
+    <a href="https://formik.org/" target="_blank" rel="noreferrer">
+      {' '}
+      <img
+        src="/assets/icons/formik.png"
+        alt="Formik logo"
+        width="40"
+        height="40"
+      />{' '}
+    </a>
+  );
+}
+
+export function PiniaIcon() {
+  return (
+    <a href="https://pinia.vuejs.org/" target="_blank" rel="noreferrer">
+      {' '}
+      <img
+        src="/assets/icons/pinia.png"
+        alt="Pinia logo"
+        width="40"
+        height="40"
+      />{' '}
+    </a>
+  );
+}
+
+export function VuexIcon() {
+  return (
+    <a href="https://vuex.vuejs.org/" target="_blank" rel="noreferrer">
+      {' '}
+      <img
+        src="/assets/icons/vuex.svg"
+        alt="Vuex logo"
+        width="40"
+        height="40"
+      />{' '}
+    </a>
+  );
+}
+
+export function VuelidateIcon() {
+  return (
+    <a href="https://vuelidate-next.netlify.app/" target="_blank" rel="noreferrer">
+      {' '}
+      <img
+        src="/assets/icons/vuelidate.png"
+        alt="Vuelidate logo"
+        width="40"
+        height="40"
+      />{' '}
+    </a>
+  );
+}
+
+export function NanostoresIcon() {
+  return (
+    <a href="https://github.com/nanostores/nanostores" target="_blank" rel="noreferrer">
+      {' '}
+      <img
+        src="/assets/icons/nanostores.svg"
+        alt="Nanostores logo"
         width="40"
         height="40"
       />{' '}
@@ -956,6 +1054,38 @@ export function ReactNativeIcon() {
         <img
           src="https://reactnative.dev/img/header_logo.svg"
           alt="reactnative"
+          width="40"
+          height="40"
+        />{' '}
+      </a>
+    </>
+  );
+}
+
+export function TailwindCSSIcon() {
+  return (
+    <>
+      <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+        {' '}
+        <img
+          src="/assets/icons/tailwindcss.svg"
+          alt="TailwindCSS Logo"
+          width="40"
+          height="40"
+        />{' '}
+      </a>
+    </>
+  );
+}
+
+export function MaterialTailwindCSSIcon() {
+  return (
+    <>
+      <a href="https://www.material-tailwind.com/" target="_blank" rel="noreferrer">
+        {' '}
+        <img
+          src="/assets/icons/material-tailwindcss.svg"
+          alt="Material TailwindCSS Logo"
           width="40"
           height="40"
         />{' '}
