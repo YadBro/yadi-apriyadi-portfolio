@@ -153,18 +153,18 @@ export default function PortfolioSection() {
       </>,
       techStacks: ['javascript', 'react', 'nextjs', 'formik', 'tailwindcss', 'material-tailwindcss', 'nanostores', 'axios'],
     },
-    // {
-    //   img: "/assets/images/portfolio/CJS-Team.png",
-    //   altImg: "Creativity Jannah Studio Capture",
-    //   project: {
-    //     title: "Creativity Jannah Studio",
-    //     link: "https://creativity-jannah-studio.vercel.app/"
-    //   },
-    //   children: <>
-    //     This is my studio community with the aim of combining technology, art, and gaming to create something beautiful <strong>(jannah)</strong>.
-    //   </>,
-    //   techStacks: ['javascript', 'react', 'nextjs', 'lua', 'robloxStudio'],
-    // },
+    {
+      img: "/assets/images/portfolio/CJS-Team.png",
+      altImg: "Creativity Jannah Studio Capture",
+      project: {
+        title: "Creativity Jannah Studio",
+        link: "https://creativity-jannah-studio.vercel.app/"
+      },
+      children: <>
+        This is my studio community with the aim of combining technology, art, and gaming to create something beautiful <strong>(jannah)</strong>.
+      </>,
+      techStacks: ['lua', 'robloxStudio'],
+    },
     // {
     //   img: "/assets/images/portfolio/beaconcream-escape-2.webp",
     //   altImg: "Beaconcream Escape 2 Capture",
