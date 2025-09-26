@@ -1,15 +1,62 @@
-export type Icons = 'nuxt' | 'socketIO' | 'redux' | 'github' | 'nextjs' | 'jest' | 'heroku' | 'mongoDB' | 'mysql' | 'robloxStudio' | 'reactNative' | 'nodejs' | 'express' | 'laravel' | 'css' | 'html' | 'bootstrap' | 'vue' | 'lua' | 'php' | 'typescript' | 'golang' | 'roblox' | 'github' | 'linkedIn' | 'youtube' | 'instagram' | 'react' | 'javascript' | 'postgresql' | 'formik' | 'tailwindcss' | 'material-tailwindcss' | 'nanostores' | 'vuelidate' | 'bootstrap' | 'pinia' | 'vuex' | 'axios' |'tanstack-query'
+export type Icons =
+  | "livewire"
+  | "alpine-js"
+  | "filamentphp"
+  | "nuxt"
+  | "socketIO"
+  | "redux"
+  | "github"
+  | "nextjs"
+  | "jest"
+  | "heroku"
+  | "mongoDB"
+  | "mysql"
+  | "robloxStudio"
+  | "reactNative"
+  | "nodejs"
+  | "express"
+  | "laravel"
+  | "css"
+  | "html"
+  | "bootstrap"
+  | "vue"
+  | "lua"
+  | "php"
+  | "typescript"
+  | "golang"
+  | "roblox"
+  | "github"
+  | "linkedIn"
+  | "youtube"
+  | "instagram"
+  | "react"
+  | "javascript"
+  | "postgresql"
+  | "formik"
+  | "tailwindcss"
+  | "material-tailwindcss"
+  | "nanostores"
+  | "vuelidate"
+  | "bootstrap"
+  | "pinia"
+  | "vuex"
+  | "axios"
+  | "tanstack-query";
 
 export function AxiosIcon() {
   return (
-    <a href="https://axios-http.com/docs/intro" target="_blank" rel="noreferrer">
-      {' '}
+    <a
+      href="https://axios-http.com/docs/intro"
+      target="_blank"
+      rel="noreferrer"
+    >
+      {" "}
       <img
         src="/assets/icons/axios.svg"
         alt="Axios logo"
         width="100"
         height="100"
-      />{' '}
+      />{" "}
     </a>
   );
 }
@@ -17,13 +64,55 @@ export function AxiosIcon() {
 export function TansactackQueryIcon() {
   return (
     <a href="https://tanstack.com/query" target="_blank" rel="noreferrer">
-      {' '}
+      {" "}
       <img
         src="/assets/icons/tanstack-query.png"
         alt="TansactackQuery logo"
         width="40"
         height="40"
-      />{' '}
+      />{" "}
+    </a>
+  );
+}
+
+export function AlpineJsIcon() {
+  return (
+    <a href="https://alpinejs.dev/" target="_blank" rel="noreferrer">
+      {" "}
+      <img
+        src="/assets/icons/alpine-js.png"
+        alt="AlpineJs logo"
+        width="40"
+        height="40"
+      />{" "}
+    </a>
+  );
+}
+
+export function FilamentPHPIcon() {
+  return (
+    <a href="https://filamentphp.com/" target="_blank" rel="noreferrer">
+      {" "}
+      <img
+        src="/assets/icons/filament.png"
+        alt="FilamentPHP logo"
+        width="40"
+        height="40"
+      />{" "}
+    </a>
+  );
+}
+
+export function LivewireIcon() {
+  return (
+    <a href="https://livewire.laravel.com/" target="_blank" rel="noreferrer">
+      {" "}
+      <img
+        src="/assets/icons/livewire.png"
+        alt="Livewire logo"
+        width="40"
+        height="40"
+      />{" "}
     </a>
   );
 }
@@ -31,13 +120,13 @@ export function TansactackQueryIcon() {
 export function SocketIOIcon() {
   return (
     <a href="https://socket.io/" target="_blank" rel="noreferrer">
-      {' '}
+      {" "}
       <img
         src="https://socket.io/images/logo.svg"
         alt="Socket IO logo"
         width="40"
         height="40"
-      />{' '}
+      />{" "}
     </a>
   );
 }
@@ -45,13 +134,13 @@ export function SocketIOIcon() {
 export function FormikIcon() {
   return (
     <a href="https://formik.org/" target="_blank" rel="noreferrer">
-      {' '}
+      {" "}
       <img
         src="/assets/icons/formik.png"
         alt="Formik logo"
         width="40"
         height="40"
-      />{' '}
+      />{" "}
     </a>
   );
 }
@@ -59,13 +148,13 @@ export function FormikIcon() {
 export function PiniaIcon() {
   return (
     <a href="https://pinia.vuejs.org/" target="_blank" rel="noreferrer">
-      {' '}
+      {" "}
       <img
         src="/assets/icons/pinia.png"
         alt="Pinia logo"
         width="40"
         height="40"
-      />{' '}
+      />{" "}
     </a>
   );
 }
@@ -73,53 +162,72 @@ export function PiniaIcon() {
 export function VuexIcon() {
   return (
     <a href="https://vuex.vuejs.org/" target="_blank" rel="noreferrer">
-      {' '}
+      {" "}
       <img
         src="/assets/icons/vuex.svg"
         alt="Vuex logo"
         width="40"
         height="40"
-      />{' '}
+      />{" "}
     </a>
   );
 }
 
 export function VuelidateIcon() {
   return (
-    <a href="https://vuelidate-next.netlify.app/" target="_blank" rel="noreferrer">
-      {' '}
+    <a
+      href="https://vuelidate-next.netlify.app/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      {" "}
       <img
         src="/assets/icons/vuelidate.png"
         alt="Vuelidate logo"
         width="40"
         height="40"
-      />{' '}
+      />{" "}
     </a>
   );
 }
 
 export function NanostoresIcon() {
   return (
-    <a href="https://github.com/nanostores/nanostores" target="_blank" rel="noreferrer">
-      {' '}
+    <a
+      href="https://github.com/nanostores/nanostores"
+      target="_blank"
+      rel="noreferrer"
+    >
+      {" "}
       <img
         src="/assets/icons/nanostores.svg"
         alt="Nanostores logo"
         width="40"
         height="40"
-      />{' '}
+      />{" "}
     </a>
   );
 }
 
 export function NuxtIcon() {
   return (
-    <a
-      href="https://nuxt.com/"
-      target="_blank"
-      rel="noreferrer"
-    >
-      <svg data-v-2115a7d5="" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="icon" width="3em" height="3em" viewBox="0 0 32 32"><path fill="#00DC82" d="M17.708 25h10.409c.33 0 .655-.088.942-.254a1.9 1.9 0 0 0 .689-.696a1.91 1.91 0 0 0 0-1.9L22.756 9.936a1.87 1.87 0 0 0-3.261 0l-1.788 3.125l-3.494-6.111a1.871 1.871 0 0 0-3.262 0l-8.7 15.2a1.91 1.91 0 0 0 .69 2.595c.286.167.61.255.941.255h6.534c2.589 0 4.498-1.147 5.811-3.385l3.19-5.572l1.708-2.982l5.127 8.957h-6.835zm-7.398-2.985l-4.56-.001l6.836-11.942l3.41 5.97l-2.283 3.992c-.873 1.452-1.864 1.981-3.403 1.981"></path></svg>
+    <a href="https://nuxt.com/" target="_blank" rel="noreferrer">
+      <svg
+        data-v-2115a7d5=""
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        aria-hidden="true"
+        role="img"
+        className="icon"
+        width="3em"
+        height="3em"
+        viewBox="0 0 32 32"
+      >
+        <path
+          fill="#00DC82"
+          d="M17.708 25h10.409c.33 0 .655-.088.942-.254a1.9 1.9 0 0 0 .689-.696a1.91 1.91 0 0 0 0-1.9L22.756 9.936a1.87 1.87 0 0 0-3.261 0l-1.788 3.125l-3.494-6.111a1.871 1.871 0 0 0-3.262 0l-8.7 15.2a1.91 1.91 0 0 0 .69 2.595c.286.167.61.255.941.255h6.534c2.589 0 4.498-1.147 5.811-3.385l3.19-5.572l1.708-2.982l5.127 8.957h-6.835zm-7.398-2.985l-4.56-.001l6.836-11.942l3.41 5.97l-2.283 3.992c-.873 1.452-1.864 1.981-3.403 1.981"
+        ></path>
+      </svg>
     </a>
   );
 }
@@ -813,14 +921,14 @@ export function GolangIcon() {
   return (
     <>
       <a href="https://golang.org" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
           alt="go"
           width="40"
           height="40"
-        />{' '}
-      </a>{' '}
+        />{" "}
+      </a>{" "}
       <a href="https://heroku.com" target="_blank" rel="noreferrer"></a>
     </>
   );
@@ -834,13 +942,13 @@ export function JavascriptIcon() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
           alt="javascript"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -854,13 +962,13 @@ export function TypescriptIcon() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
           alt="typescript"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -870,13 +978,13 @@ export function PHPIcon() {
   return (
     <>
       <a href="https://www.php.net/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://www.php.net/images/logos/php-logo.svg"
           alt="php icon"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -886,13 +994,13 @@ export function LUAIcon() {
   return (
     <>
       <a href="https://www.lua.org/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg"
           alt="lua icon"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -903,13 +1011,13 @@ export function VueIcon() {
   return (
     <>
       <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
           alt="vuejs"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -919,13 +1027,13 @@ export function ReactIcon() {
   return (
     <>
       <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
           alt="react"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -935,13 +1043,13 @@ export function BootstrapIcon() {
   return (
     <>
       <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
           alt="bootstrap"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -951,13 +1059,13 @@ export function CSSIcon() {
   return (
     <>
       <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
           alt="css3"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -967,13 +1075,13 @@ export function HTMLIcon() {
   return (
     <>
       <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
           alt="html5"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -984,13 +1092,13 @@ export function NodeJsIcon() {
   return (
     <>
       <a href="https://nodejs.org" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
           alt="nodejs"
           width="100"
           height="100"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1000,13 +1108,13 @@ export function ExpressIcon() {
   return (
     <>
       <a href="https://expressjs.com" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
           alt="express"
           width="100"
           height="100"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1016,13 +1124,13 @@ export function LaravelIcon() {
   return (
     <>
       <a href="https://laravel.com/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://laravel.com/img/logomark.min.svg"
           alt="git"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1033,13 +1141,13 @@ export function RobloxStudioIcon() {
   return (
     <>
       <a href="https://create.roblox.com/docs" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/b/b5/ROBLOX_Studio_icon.png"
           alt="roblox studio icon"
           width="50"
           height="50"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1050,13 +1158,13 @@ export function ReactNativeIcon() {
   return (
     <>
       <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://reactnative.dev/img/header_logo.svg"
           alt="reactnative"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1066,13 +1174,13 @@ export function TailwindCSSIcon() {
   return (
     <>
       <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="/assets/icons/tailwindcss.svg"
           alt="TailwindCSS Logo"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1081,14 +1189,18 @@ export function TailwindCSSIcon() {
 export function MaterialTailwindCSSIcon() {
   return (
     <>
-      <a href="https://www.material-tailwind.com/" target="_blank" rel="noreferrer">
-        {' '}
+      <a
+        href="https://www.material-tailwind.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {" "}
         <img
           src="/assets/icons/material-tailwindcss.svg"
           alt="Material TailwindCSS Logo"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1099,13 +1211,13 @@ export function MySQLIcon() {
   return (
     <>
       <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
           alt="mysql"
           width="70"
           height="70"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1115,13 +1227,13 @@ export function PostgresqlIcon() {
   return (
     <>
       <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
           alt="postgresql"
           width="70"
           height="70"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1131,13 +1243,13 @@ export function MongoDBIcon() {
   return (
     <>
       <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
           alt="mongodb"
           width="70"
           height="70"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1148,13 +1260,13 @@ export function HerokuIcon() {
   return (
     <>
       <a href="https://heroku.com" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
           alt="heroku"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1165,13 +1277,13 @@ export function JestIcon() {
   return (
     <>
       <a href="https://jestjs.io" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
           alt="jest"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1182,13 +1294,13 @@ export function NextJsIcon() {
   return (
     <>
       <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
           alt="nextjs"
           width="70"
           height="70"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1199,13 +1311,13 @@ export function GITIcon() {
   return (
     <>
       <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
           alt="git"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1216,13 +1328,13 @@ export function ReduxIcon() {
   return (
     <>
       <a href="https://redux.js.org/" target="_blank" rel="noreferrer">
-        {' '}
+        {" "}
         <img
           src="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg"
           alt="git"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1238,13 +1350,13 @@ export function GolangIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
           alt="go"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1259,13 +1371,13 @@ export function JavascriptIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
           alt="javascript"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1280,13 +1392,13 @@ export function TypescriptIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
           alt="typescript"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1302,13 +1414,13 @@ export function VueIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
           alt="vuejs"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1323,13 +1435,13 @@ export function ReactIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
           alt="react"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1344,13 +1456,13 @@ export function BootstrapIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
           alt="bootstrap"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1365,13 +1477,13 @@ export function CSSIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
           alt="css3"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1386,13 +1498,13 @@ export function HTMLIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
           alt="html5"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1408,13 +1520,13 @@ export function NodeJsIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
           alt="nodejs"
           width="100"
           height="100"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1429,13 +1541,13 @@ export function ExpressIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
           alt="express"
           width="100"
           height="100"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1451,13 +1563,13 @@ export function ReactNativeIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://reactnative.dev/img/header_logo.svg"
           alt="reactnative"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1473,13 +1585,13 @@ export function MySQLIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
           alt="mysql"
           width="70"
           height="70"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1494,13 +1606,13 @@ export function PostgresqlIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
           alt="postgresql"
           width="70"
           height="70"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1515,13 +1627,13 @@ export function MongoDBIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
           alt="mongodb"
           width="70"
           height="70"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1537,13 +1649,13 @@ export function HerokuIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
           alt="heroku"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1559,13 +1671,13 @@ export function JestIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
           alt="jest"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1581,13 +1693,13 @@ export function NextJsIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
           alt="nextjs"
           width="70"
           height="70"
-        />{' '}
+        />{" "}
       </a>
     </>
   );
@@ -1603,13 +1715,13 @@ export function GITIconGrayAnimation() {
         target="_blank"
         rel="noreferrer"
       >
-        {' '}
+        {" "}
         <img
           src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
           alt="git"
           width="40"
           height="40"
-        />{' '}
+        />{" "}
       </a>
     </>
   );

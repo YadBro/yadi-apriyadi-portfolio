@@ -20,7 +20,7 @@ export default function AboutSection() {
                 More and more to learn!
               </h2>
               <p className="font-medium text-base text-secondary max-w-xl lg:text-lg text-justify">
-                I am Yadi Apriyadi, a Junior To Mid Programmer with more than 2
+                I am Yadi Apriyadi, a Junior To Mid Programmer with more than 3
                 year experience. I am a hard worker with experience building
                 simple web applications to complex web applications. With this
                 experience I have succeeded in creating website-based
