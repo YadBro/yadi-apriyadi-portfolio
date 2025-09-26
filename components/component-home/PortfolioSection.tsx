@@ -276,6 +276,25 @@ export default function PortfolioSection() {
       ],
     },
     {
+      img: "/assets/images/portfolio/pnm.png",
+      altImg: "PNM Logo",
+      project: {
+        title: "PNM",
+        link: "https://www.pnm.co.id/",
+      },
+      children: (
+        <>
+          Help development cms project:
+          <ul>
+            <li>- Create New Feature</li>
+            <li>- Bug Fixing</li>
+            <li>- Improvement</li>
+          </ul>
+        </>
+      ),
+      techStacks: ["javascript", "nextjs", "tailwindcss", "react"],
+    },
+    {
       img: "/assets/images/portfolio/CJS-Team.png",
       altImg: "Creativity Jannah Studio Capture",
       project: {

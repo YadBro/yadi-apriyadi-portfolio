@@ -20,6 +20,7 @@ import {
   NextJsIcon,
   NodeJsIcon,
   NuxtIcon,
+  PHPIcon,
   PiniaIcon,
   PostgresqlIcon,
   ReactIcon,
@@ -113,6 +114,8 @@ export default function PortfolioItem(props: PortfolioItemProps) {
           return <LivewireIcon />;
         case "filamentphp":
           return <FilamentPHPIcon />;
+        case "php":
+          return <PHPIcon />;
       }
     }
 
