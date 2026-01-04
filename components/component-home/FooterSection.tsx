@@ -18,7 +18,6 @@ export default function FooterSection() {
               </h2>
               <h3 className="font-bold text-2xl mb-2">Contact Me</h3>
               <p>yadi042003@gmail.com</p>
-              {/* <p>+62 881-0226-50401</p> */}
               <p>Indonesia, Cimahi City</p>
             </div>
             <div className="pt-24 lg:px-8 px-4 self-end text-white">
