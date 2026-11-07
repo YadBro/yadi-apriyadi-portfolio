@@ -1,4 +1,5 @@
-import { Fragment, PropsWithChildren, useMemo } from "react";
+import { Fragment, type PropsWithChildren } from "react";
+import Image from "next/image";
 import type { Icons } from "./component-icon";
 import {
   AlpineJsIcon,
@@ -37,124 +38,139 @@ import {
 
 export interface PortfolioItemProps extends PropsWithChildren {
   img: string;
+  width: number;
+  height: number;
+  unoptimized?: boolean;
   altImg: string;
   project: {
     title: string;
     link: string;
   };
-  techStacks?: Array<Icons>;
+  techStacks?: Icons[];
   cardImgClassName?: string;
 }
 
-export default function PortfolioItem(props: PortfolioItemProps) {
-  const techStackItem = useMemo(() => {
-    function icon(techStack: Icons) {
-      switch (techStack) {
-        case "react":
-          return <ReactIcon />;
-        case "javascript":
-          return <JavascriptIcon />;
-        case "postgresql":
-          return <PostgresqlIcon />;
-        case "html":
-          return <HTMLIcon />;
-        case "css":
-          return <CSSIcon />;
-        case "socketIO":
-          return <SocketIOIcon />;
-        case "express":
-          return <ExpressIcon />;
-        case "reactNative":
-          return <ReactNativeIcon />;
-        case "bootstrap":
-          return <BootstrapIcon />;
-        case "github":
-          return <GithubIcon />;
-        case "golang":
-          return <GolangIcon />;
-        case "laravel":
-          return <LaravelIcon />;
-        case "vue":
-          return <VueIcon />;
-        case "nuxt":
-          return <NuxtIcon />;
-        case "lua":
-          return <LUAIcon />;
-        case "robloxStudio":
-          return <RobloxStudioIcon />;
-        case "nextjs":
-          return <NextJsIcon />;
-        case "formik":
-          return <FormikIcon />;
-        case "tailwindcss":
-          return <TailwindCSSIcon />;
-        case "material-tailwindcss":
-          return <MaterialTailwindCSSIcon />;
-        case "nanostores":
-          return <NanostoresIcon />;
-        case "nodejs":
-          return <NodeJsIcon />;
-        case "vuelidate":
-          return <VuelidateIcon />;
-        case "bootstrap":
-          return <BootstrapIcon />;
-        case "redux":
-          return <ReduxIcon />;
-        case "pinia":
-          return <PiniaIcon />;
-        case "vuex":
-          return <VuexIcon />;
-        case "tanstack-query":
-          return <TansactackQueryIcon />;
-        case "axios":
-          return <AxiosIcon />;
-        case "alpine-js":
-          return <AlpineJsIcon />;
-        case "livewire":
-          return <LivewireIcon />;
-        case "filamentphp":
-          return <FilamentPHPIcon />;
-        case "php":
-          return <PHPIcon />;
-      }
-    }
-
-    if (Array.isArray(props.techStacks) && props.techStacks.length) {
-      return props.techStacks.map((techStack, i) => {
-        return <Fragment key={`techStack-${i}`}>{icon(techStack)}</Fragment>;
-      });
-    } else {
+function renderTechStackIcon(techStack: Icons) {
+  switch (techStack) {
+    case "react":
+      return <ReactIcon />;
+    case "javascript":
+      return <JavascriptIcon />;
+    case "postgresql":
+      return <PostgresqlIcon />;
+    case "html":
+      return <HTMLIcon />;
+    case "css":
+      return <CSSIcon />;
+    case "socketIO":
+      return <SocketIOIcon />;
+    case "express":
+      return <ExpressIcon />;
+    case "reactNative":
+      return <ReactNativeIcon />;
+    case "bootstrap":
+      return <BootstrapIcon />;
+    case "github":
+      return <GithubIcon />;
+    case "golang":
+      return <GolangIcon />;
+    case "laravel":
+      return <LaravelIcon />;
+    case "vue":
+      return <VueIcon />;
+    case "nuxt":
+      return <NuxtIcon />;
+    case "lua":
+      return <LUAIcon />;
+    case "robloxStudio":
+      return <RobloxStudioIcon />;
+    case "nextjs":
+      return <NextJsIcon />;
+    case "formik":
+      return <FormikIcon />;
+    case "tailwindcss":
+      return <TailwindCSSIcon />;
+    case "material-tailwindcss":
+      return <MaterialTailwindCSSIcon />;
+    case "nanostores":
+      return <NanostoresIcon />;
+    case "nodejs":
+      return <NodeJsIcon />;
+    case "vuelidate":
+      return <VuelidateIcon />;
+    case "redux":
+      return <ReduxIcon />;
+    case "pinia":
+      return <PiniaIcon />;
+    case "vuex":
+      return <VuexIcon />;
+    case "tanstack-query":
+      return <TansactackQueryIcon />;
+    case "axios":
+      return <AxiosIcon />;
+    case "alpine-js":
+      return <AlpineJsIcon />;
+    case "livewire":
+      return <LivewireIcon />;
+    case "filamentphp":
+      return <FilamentPHPIcon />;
+    case "php":
+      return <PHPIcon />;
+    default:
       return null;
-    }
-  }, [props.techStacks]);
+  }
+}
 
+export default function PortfolioItem({
+  img,
+  width,
+  height,
+  unoptimized,
+  altImg,
+  project,
+  techStacks,
+  cardImgClassName,
+  children,
+}: PortfolioItemProps) {
   return (
     <div className="mb-12 p-4 md:w-1/2">
       <div
         className={`rounded-md shadow-md overflow-hidden ${
-          props?.cardImgClassName || ""
+          cardImgClassName || ""
         }`}
       >
-        <img src={props.img} alt={props.altImg} className="w-full" />
+        <Image
+          src={img}
+          alt={altImg}
+          width={width}
+          height={height}
+          sizes="(min-width: 1280px) 42vw, (min-width: 768px) 50vw, 100vw"
+          unoptimized={unoptimized}
+          className="w-full h-auto"
+        />
       </div>
       <h3 className="font-semibold text-xl text-dark mt-5 mb-3">
         <a
-          href={props.project.link}
+          href={project.link}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="thickness-link"
         >
-          {props.project.title}
+          {project.title}
         </a>
       </h3>
       <div className="font-medium text-base text-secondary text-justify">
-        {props.children}
+        {children}
       </div>
-      {Array.isArray(props.techStacks) && props.techStacks.length ? (
+      {Array.isArray(techStacks) && techStacks.length > 0 ? (
         <div className="mt-5">
-          <h2 className="mb-3">Tech Stacks:</h2>
+          <h4 className="mb-3">Tech Stacks:</h4>
           <div className="flex items-center gap-3 max-w-sm">
-            {techStackItem}
+            {techStacks.map((techStack, i) => (
+              <Fragment key={`${techStack}-${i}`}>
+                {renderTechStackIcon(techStack)}
+              </Fragment>
+            ))}
           </div>
         </div>
       ) : null}
